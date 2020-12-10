@@ -9,7 +9,8 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import 'normalize.css';
 import Header from './header';
-import './layout.css';
+import GlobalStyles from '../styles/GlobalStyles';
+import Typography from '../styles/Typography';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,6 +25,8 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <GlobalStyles />
+      <Typography />
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
