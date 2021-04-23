@@ -8,6 +8,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import 'normalize.css';
+import 'prismjs/themes/prism.css';
 import Header from './Header';
 import GlobalStyles from '../styles/GlobalStyles';
 import Typography from '../styles/Typography';
