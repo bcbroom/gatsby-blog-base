@@ -63,14 +63,9 @@ export default {
       },
     },
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: `gatsby-plugin-plausible`,
       options: {
-        trackingIds: ['GA-TRACKING-TAG'],
-        pluginConfig: {
-          head: false,
-          respectDNT: true,
-          exclude: [],
-        },
+        domain: `example.com`,
       },
     },
     'gatsby-plugin-styled-components',
